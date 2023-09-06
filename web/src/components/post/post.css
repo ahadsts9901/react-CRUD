@@ -1,6 +1,6 @@
 * {
-    font-family: "Jakarta Sans", sans-serif;
-    font-weight: bold !important;
+    font-family: "Poppins", "Jakarta Sans", sans-serif;
+    font-weight: 700 !important;
     outline: none !important;
 }
 
@@ -8,8 +8,8 @@ body {
     /* background-image: url(./background.png); */
     /* background-repeat: repeat; */
     /* background-position: center; */
-    background-color: #18171f !important;
-    color: #e6e5ea !important;
+    background-color: #eee !important;
+    color: #171717 !important;
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -22,7 +22,7 @@ body {
 }
 
 .green {
-    color: #a4ffaf;
+    color: #3868e3;
 }
 
 i,
@@ -38,23 +38,23 @@ h6 {
 }
 
 .drop-down {
-    background-color: #18171f;
-    color: #a4ffaf;
+    background-color: #eee;
+    color: #3868e3;
     border: 0px;
     padding: 0em;
     margin: 0em;
 }
 
 .dropdown-menu.show {
-    background-color: #18171f;
-    color: #e6e5ea;
-    border: 1px solid #e6e5ea;
+    background-color: #eee;
+    color: #171717;
+    border: 1px solid #171717;
     width: 11em !important;
 }
 
 .drop-down-options {
-    /* background-color: #e6e5ea; */
-    color: #18171f;
+    /* background-color: #171717; */
+    color: #eee;
     border: 0px;
     width: 8em !important;
 }
@@ -68,7 +68,7 @@ h6 {
 
 a,
 .list>a {
-    color: #e6e5ea;
+    color: #171717;
     text-decoration: none !important;
     margin: 0.5em 0.3em !important;
     /* width: fit-content; */
@@ -100,21 +100,31 @@ form {
     width: 100%;
 }
 
+form button:hover,
+form button:active,
+form button:focus,
+form .input:hover,
+form .input:active,
+form .input:focus {
+    box-shadow: #888 0px 0px 8px, #888 0px 0px 8px;
+}
+
+
 .button {
-    color: #18171f;
-    background-color: #a4ffaf;
+    color: #eee;
+    background-color: #3868e3;
     width: 5em;
     height: 2.5em;
     border: 0px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     font-size: 1em;
     margin-left: auto;
     margin-top: 2em;
 }
 
 .button:active {
-    background-color: #18171f;
-    color: #a4ffaf;
+    background-color: #eee;
+    color: #3868e3;
 }
 
 .center {
@@ -130,11 +140,11 @@ form {
 .input {
     padding: 1em;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     width: 10em;
     height: 3em;
-    color: #18171f;
-    background-color: #e6e5ea;
+    color: #171717;
+    background-color: #fff;
     width: 100%;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -151,39 +161,39 @@ form {
 
 #text::-moz-scrollbar {
     width: 4px;
-    border-radius: 10px;
-    background-color: #e6e5ea;
+    /* border-radius: 10px; */
+    background-color: #171717;
 }
 
 #text::-moz-scrollbar-thumb {
     width: 4px !important;
-    border-radius: 10px;
-    /* -webkit-box-shadow: inset 0 0 6px #18171f; */
-    background-color: #18171f;
+    /* border-radius: 10px; */
+    /* -webkit-box-shadow: inset 0 0 6px #eee; */
+    background-color: #eee;
     border: none;
 }
 
 #text::-moz-scrollbar-track {
-    background-color: #e6e5ea;
+    background-color: #171717;
     border: none;
 }
 
 #text::-webkit-scrollbar-track {
-    background-color: #e6e5ea;
+    background-color: #171717;
     border: none;
 }
 
 #text::-webkit-scrollbar {
     width: 4px;
-    border-radius: 10px;
-    background-color: #e6e5ea;
+    /* border-radius: 10px; */
+    background-color: #171717;
 }
 
 #text::-webkit-scrollbar-thumb {
     width: 4px !important;
-    border-radius: 10px;
-    /* -webkit-box-shadow: inset 0 0 6px #18171f; */
-    background-color: #18171f;
+    /* border-radius: 10px; */
+    /* -webkit-box-shadow: inset 0 0 6px #eee; */
+    background-color: #eee;
     border: none;
 }
 
@@ -196,11 +206,11 @@ form {
 }
 
 .space-around>p {
-    color: #a4ffaf;
+    color: #3868e3;
 }
 
 .space-around>i {
-    color: #e6e5ea;
+    color: #171717;
 }
 
 .result {
@@ -209,7 +219,7 @@ form {
     gap: 1em;
     flex-wrap: wrap;
     width: 100%;
-    /* border: 2px solid #18171f; */
+    /* border: 2px solid #eee; */
     padding: 1em 0em;
 }
 
@@ -223,9 +233,10 @@ form {
     row-gap: 1em;
     width: 15em !important;
     /* height: fit-content!important; */
-    border: 2px solid #e6e5ea;
-    background-color: #24232c;
-    border-radius: 0px !important;
+    /* border: 2px solid #171717; */
+    box-shadow: #171717 0px 8px 16px, #171717 0px 8px 16px;
+    background-color: #fff;
+    /* border-radius: 0px !important; */
 }
 
 .result>.post>p {
@@ -241,7 +252,7 @@ form {
 
 .regards {
     font-size: 0.6em;
-    color: #e6e5ea;
+    color: #171717;
 }
 
 .scroll {
@@ -257,44 +268,44 @@ form {
 .scroll::-moz-scrollbar {
     height: 2px;
     width: 2px;
-    border-radius: 10px;
-    background-color: #24232c;
+    /* border-radius: 10px; */
+    background-color: #fff;
 }
 
 .scroll::-moz-scrollbar-thumb {
     height: 2px;
     width: 2px !important;
-    border-radius: 10px;
-    /* -webkit-box-shadow: inset 0 0 6px #18171f; */
-    background-color: #e6e5ea;
+    /* border-radius: 10px; */
+    /* -webkit-box-shadow: inset 0 0 6px #eee; */
+    background-color: #171717;
     border: none;
 }
 
 .scroll::-moz-scrollbar-track {
-    background-color: #24232c;
+    background-color: #fff;
     border: none;
 }
 
 .scroll::-webkit-scrollbar-track {
-    background-color: #24232c;
+    background-color: #fff;
     border: none;
 }
 
 .scroll::-webkit-scrollbar {
     height: 2px;
     width: 2px;
-    background-color: #24232c;
+    background-color: #fff;
 }
 
 .scroll::-webkit-scrollbar-thumb {
     height: 2px;
     width: 2px !important;
-    background-color: #e6e5ea;
+    background-color: #171717;
     border: none;
 }
 
 .scrollH {
-    color: #a4ffaf;
+    color: #3868e3;
     overflow-y: hidden;
     overflow-x: auto;
     width: 100%;
@@ -317,6 +328,25 @@ form {
 .swal2-input {
     width: 90% !important;
     margin: auto !important;
-    margin-top: 1em!important;
-    margin-bottom: 1em!important;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    border: 2px solid #888;
+    border-radius: 0px !important;
+    color: #212121;
+}
+
+.swal2-input:focus,
+.swal2-input:hover,
+.swal2-input:active {
+    box-shadow: 0 0 0;
+}
+
+.swal2-cancel:focus,
+.swal2-cancel:hover,
+.swal2-cancel:active,
+.swal2-confirm:focus,
+.swal2-confirm:hover,
+.swal2-confirm:active {
+    box-shadow: #888 0px 0px 8px, #888 0px 0px 8px;
+    box-shadow: inset #888 0px 0px 8px, #888 0px 0px 8px;
 }
