@@ -1,24 +1,37 @@
 * {
-    font-family: "Space Mono", monospace;
-    font-weight: bold!important;
-    outline: none!important;
+    font-family: "Jakarta Sans", sans-serif;
+    font-weight: bold !important;
+    outline: none !important;
 }
 
 body {
-    /* background-image: url(./background.png); */
-    /* background-repeat: repeat; */
-    /* background-position: center; */
-    background-color: #18171f!important;
-    color: #e6e5ea!important;
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-items: center;
-    row-gap: 2em!important;
+    margin: 0em;
+    width: 100vw;
+    height: 100vh;
+    padding: 0em !important;
+}
+
+#root {
+    background-color: #18171f !important;
+    color: #e6e5ea !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    row-gap: 2em !important;
     padding: 2em 1em;
     margin: 0em;
     width: 100vw;
     height: 100vh;
+}
+
+h1.green {
+    text-align: center;
+    padding-bottom: 1em !important;
 }
 
 .green {
@@ -34,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0em!important;
+    margin: 0em !important;
 }
 
 .drop-down {
@@ -49,14 +62,14 @@ h6 {
     background-color: #18171f;
     color: #e6e5ea;
     border: 1px solid #e6e5ea;
-    width: 11em!important;
+    width: 11em !important;
 }
 
 .drop-down-options {
     /* background-color: #e6e5ea; */
     color: #18171f;
     border: 0px;
-    width: 8em!important;
+    width: 8em !important;
 }
 
 .list {
@@ -69,16 +82,17 @@ h6 {
 a,
 .list>a {
     color: #e6e5ea;
-    text-decoration: none!important;
-    margin: 0.5em 0.3em!important;
+    text-decoration: none !important;
+    margin: 0.5em 0.3em !important;
     /* width: fit-content; */
 }
 
 .icon {
-    margin-right: 0.5em!important;
+    margin-right: 0.5em !important;
 }
 
-row {
+row,
+.row {
     display: flex;
     justify-content: center;
     /* justify-content: space-between; */
@@ -96,19 +110,19 @@ form {
     align-items: center;
     padding: 0.5em;
     row-gap: 1em;
-    width: 100%;
+    width: 100% !important;
+    margin: 3em 0em;
 }
 
 .button {
     color: #18171f;
     background-color: #a4ffaf;
-    width: 5em;
-    height: 2.5em;
+    width: fit-content !important;
     border: 0px;
     border-radius: 15px;
     font-size: 1em;
-    margin-left: auto;
-    margin-top: 2em;
+    padding: 0.5em 1em !important;
+    margin: 0em !important;
 }
 
 .button:active {
@@ -145,7 +159,7 @@ form {
 
 #text,
 .text {
-    height: 6em!important;
+    height: 6em !important;
 }
 
 #text::-moz-scrollbar {
@@ -155,7 +169,7 @@ form {
 }
 
 #text::-moz-scrollbar-thumb {
-    width: 4px!important;
+    width: 4px !important;
     border-radius: 10px;
     /* -webkit-box-shadow: inset 0 0 6px #18171f; */
     background-color: #18171f;
@@ -179,7 +193,7 @@ form {
 }
 
 #text::-webkit-scrollbar-thumb {
-    width: 4px!important;
+    width: 4px !important;
     border-radius: 10px;
     /* -webkit-box-shadow: inset 0 0 6px #18171f; */
     background-color: #18171f;
@@ -220,12 +234,11 @@ form {
     align-items: center;
     padding: 0.8em 1.5em;
     row-gap: 1em;
-    width: 15em!important;
+    width: 15em !important;
     /* height: fit-content!important; */
     border: 2px solid #e6e5ea;
     background-color: #24232c;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 0px !important;
 }
 
 .result>.post>p {
@@ -245,8 +258,8 @@ form {
 }
 
 .scroll {
-    min-height: 1em!important;
-    max-height: 6em!important;
+    min-height: 1em !important;
+    max-height: 6em !important;
     overflow-y: auto;
     overflow-x: auto;
     width: 100%;
@@ -263,7 +276,7 @@ form {
 
 .scroll::-moz-scrollbar-thumb {
     height: 2px;
-    width: 2px!important;
+    width: 2px !important;
     border-radius: 10px;
     /* -webkit-box-shadow: inset 0 0 6px #18171f; */
     background-color: #e6e5ea;
@@ -288,7 +301,7 @@ form {
 
 .scroll::-webkit-scrollbar-thumb {
     height: 2px;
-    width: 2px!important;
+    width: 2px !important;
     background-color: #e6e5ea;
     border: none;
 }
@@ -311,5 +324,20 @@ form {
 }
 
 .noPostMessage {
-    margin: auto!important;
+    margin: auto !important;
+}
+
+#root>div {
+    width: 100%;
+}
+
+h2.green {
+    padding-left: 1em;
+}
+
+.swal2-input {
+    width: 90% !important;
+    margin: auto !important;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
 }
