@@ -1,4 +1,5 @@
 import "./post.css";
+import "../home/home.css";
 import { TrashFill, PencilFill } from 'react-bootstrap-icons';
 import moment from 'moment'
 
@@ -12,8 +13,8 @@ const Post = (props) => {
             <p className="scroll">{props.text}</p>
             <div className="space-around">
                 <p className="regards">Regards! Muhammad Ahad</p>
-                <TrashFill onClick={() => { props.del(props.postId) }} />
-                <PencilFill onClick={() => { props.edit(props.postId) }} />
+                <TrashFill onClick={() => { props.del(props.postId) }} className="btn" />
+                <PencilFill onClick={() => { props.edit(props.postId) }} className="btn" />
             </div>
         </div>
     );

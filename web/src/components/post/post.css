@@ -1,5 +1,5 @@
 * {
-    font-family: "Poppins", "Jakarta Sans", sans-serif;
+    font-family: "Jost", "Poppins", "Jakarta Sans", sans-serif;
     font-weight: 700 !important;
     outline: none !important;
 }
@@ -338,7 +338,7 @@ form {
 .swal2-input:focus,
 .swal2-input:hover,
 .swal2-input:active {
-    box-shadow: 0 0 0;
+    box-shadow: 0 0 0!important;
 }
 
 .swal2-cancel:focus,
@@ -347,6 +347,31 @@ form {
 .swal2-confirm:focus,
 .swal2-confirm:hover,
 .swal2-confirm:active {
-    box-shadow: #888 0px 0px 8px, #888 0px 0px 8px;
-    box-shadow: inset #888 0px 0px 8px, #888 0px 0px 8px;
+    box-shadow: #888 0px 0px 8px, #888 0px 0px 8px!important;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717!important;
+    color: #fff;
+    pad: 0.5em;
+    font-size: 0.7em;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717!important;
+    color: #fff!important;
+    padding: 0.5em;
+    font-size: 0.7em;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px!important;
 }
